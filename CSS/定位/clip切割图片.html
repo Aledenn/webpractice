@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		img.clip{
+			/*clip属性只能用于绝对定位元素，position:absolute或fixed。*/
+			position:absolute;
+			/* 三种取值 auto 默认
+				inherit 继承父级
+			    方形clip: rect(<top>, <right>, <bottom>, <left>);*/
+			clip: rect(10px  350px  170px  0); /* IE4 to IE7 */
+    		clip: rect(10px, 350px, 170px, 0); /* IE8+ & other browsers */
+		}
+	</style>
+</head>
+<body>
+	<p>clip裁剪图片</p>
+	<img src="gametime.png" alt="游戏时间" class="clip">
+</body>
+</html>

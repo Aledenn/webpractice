@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		margin:0 ;
+	}
+		/*浮动会和标准布局分开*/
+		.red,.green,.blue{
+			width: 200px;
+			height: 200px;
+		}
+		.red{
+			background: red;
+			float:left;
+		}
+		.green{
+			background: green;
+			float:left;
+		}
+		.blue{
+			background: blue;
+			float:right;
+
+		}
+		.gray{
+			height: 200px;
+			background-color: black;
+		}
+
+		/*设置浮动后 span可以有宽高 转换为行列块（不推荐使用，使用display:inline-block）*/
+		span{
+			float: left;
+			background: pink;
+			width:100px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+	<div class="gray"></div>
+	<span></span>
+</body>
+</html>
