@@ -77,16 +77,29 @@
 	<p>邮箱地址请按格式输入</p>
 	<p>请输入密码： <input type="password" placeholder="请输入密码" ><input type="password" placeholder="请重复输入密码" ></p>
 	<p>密码为6-18位英文数字</p>
-	<p>性别 </p>
+	
+	<span>性别&nbsp</span>
+	<input type="radio" value="man" name="sex" checked="checked" id="1"><label for="1">男</label>
+	<input type="radio" value="girl" name="sex" id="2"><label for="2" >女</label>
+
 	<select name="城市" id="">
 		<option>北京</option>
 		<option>上海</option>
 		<option>广州</option>
 		<option>深圳</option>
 		<option>杭州</option>
-	</select>
+
+	</select>	
+	&nbsp 爱好：&nbsp 
+	<input type="checkbox" value="sport" name="hoby" id="1" > <label for="1">运动</label>
+	<input type="checkbox" value="art" name="hoby" id="2"> <label for="2">艺术</label>
+	<input type="checkbox" value="science" name="hoby" id="3"> <label for="3">科学</label>
+	&nbsp 个人描述:&nbsp 
+	<textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
+	<input type="submit" value="提交">
+	
 	</form>
-	        <form action="">  
+	        <form action="post">  
         <!-- 带边框的表单 -->     
         	<fieldset>     <!-- 定义一组相关的表单元素，并使用外框包含起来 -->  
                 <legend>个人信息</legend>   <!-- 定义fieldset元素的标签 -->  
@@ -94,6 +107,8 @@
                 邮    箱：<input type="text" size="30"><br>  
                 出生日期：<input type="text" size="26">  
             </fieldset>  
-        </form>     
+        	</form>
+
+    <br>版权所有&copy;     
 </body> 
 </html>
