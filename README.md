@@ -8,6 +8,7 @@ sumblimegit
 prettify
 自动缩进
 colorpicker 快捷键 ctrl+shift+c
-JS代码提示
-引入文件提示
+JS sublimeCodeIntel
+AutoFileName 引入文件提示
 node.js ctrl+B  运行
+SideBarEnhancements 修改默认浏览器

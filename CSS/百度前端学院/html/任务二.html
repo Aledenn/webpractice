@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    body {
+        background-color: #0A0707;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .body {
+        width: 1300px;
+        color: #331212;
+        background-color: #EFE5E5;
+        margin: auto;
+    }
+
+    .head {
+        float: right;
+        background-color: rgb(51, 51, 51);
+        width: 1300px;
+        height: 100px;
+    }
+
+    .box {
+        margin: 50px 50px;
+        background-color: #FFFFFF;
+        padding: 50px 20px;
+    }
+
+    .lbox {
+        border: 1px solid #000;
+        width: 200px;
+        height: 200px;
+        margin: 20px 20px;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    div #b {
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+        /*        position: absolute;
+        right: 0;*/
+    }
+
+    table {
+        width: 70em;
+        height: 13em;
+        border-collapse: collapse;
+        border: rgb(220, 220, 220) solid 1px;
+    }
+
+    thead {
+        height: 40px;
+        background-color: #131212;
+        color: white;
+    }
+
+    td {
+        padding-left: 0.5em;
+    }
+
+    tfoot {
+        height: 100px;
+        color: #A9A1A1;
+        background-color: #868181;
+        color: #070707;
+    }
+    /*阴影效果：横向偏移3像素，纵向偏移3像素，模糊4像素，颜色为纯黑。*/
+
+    .shadow {
+        box-shadow: 3px 3px 4px #000;
+    }
+    /*左侧栏*/
+
+    .leftfloat {
+        border-style: none none none solid;
+    }
+
+    .daohang li {
+        /*margin: 0 10px;*/
+        width: 100px;
+        float: left;
+    }
+
+
+    .daohang li a {
+        font-family: "Microsoft Yahei";
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 60px;
+    }
+    /*要加.daohang li 因为权重问题*/
+
+    .daohang li a:visited {
+        color: red;
+    }
+    /*清除浮动*/
+
+    .footer {
+        clear: both;
+    }
+/*
+    .final p,h2{
+        position: absolute;
+        left: 40%;
+
+    }*/
+
+    form 
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="head">
+            <div class="left"><img src="headleft.jpg" alt="" id="b"></div>
+            <div class="right">
+                <ul class="daohang">
+                    <li><a href="http://www.taobao.com" target="view_window">导航链接1</a></li>
+                    <li><a href="2" target="view_window">导航链接2</a></li>
+                    <li><a href="3" target="view_window">导航链接3</a></li>
+                    <li><a href="#" target="view_window">导航链接4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <div class="box shadow">
+            <h2>文章一级标题</h2>
+            <h2>文章二级标题</h2>
+            <p>文章作者 文章发表时间</p>
+            <br/>
+            <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落, 换行了
+                <br> 这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落, 这是一个很长很长的段落,这是一个很长很长的段落,
+                <a href="http://www.baidu.com">这里有个链接到百度</a> 这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,
+                <strong>这是粗体（strong标签，推荐使用，语义化）</strong><b>这也是粗体（b标签）</b></p>
+            <img src="快重传.png" alt="快重传">
+            <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+                <br>
+                <a href="http://www.baidu.com" target="view_window">这是一个链接 点击后打开新窗口链接到baidu</a>
+            </p>
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目2</li>
+                <li>列表项目3</li>
+            </ul>
+        </div>
+        <div class="box shadow">
+            <h2>图片</h2>
+            <blockquote>
+                <div class="lbox">
+                    <p>好看的图片</p>
+                    <img src="快重传.png" alt="快重传"></div>
+                <div class="lbox">
+                    <p>好看的图片</p>
+                    <img src="快重传.png" alt="快重传"></div>
+                <div class="lbox">
+                    <p>好看的图片</p>
+                    <img src="快重传.png" alt="快重传"></div>
+            </blockquote>
+            <img src="快重传.png" alt="快重传">
+        </div>
+        <div class="box shadow">
+            <h2>最后篇文章</h2>
+            <h3>文章二级标题</h3>
+            <p>文章作者 文章发表时间</p>
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ol>
+            <p>下面是一个表格,给表格加一个border="1"让你看出是一个表格</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>表头</td>
+                        <td>表头</td>
+                        <td>表头</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>数据</td>
+                    <td>数据</td>
+                    <td><a href="">操作</a></td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td><strong>数据</strong></td>
+                        <td colspan="2"><strong>数据2个表格</strong></td>
+                        <!-- <td><a href="">操作</a></td> -->
+                    </tr>
+                </tfoot>
+            </table>
+            <h2 class="leftfloat">这里以后是一个侧栏，这是侧栏的标题</h2>
+            <h2>侧栏注册窗口标题</h2>
+            <form>
+                <div class="final">
+                <p>请输入邮箱地址：
+                    <input type="text" value="这是一个文本框">
+                </p>
+                <p>邮箱地址请按格式输入</p>
+                <p>请输入密码：
+                    <input type="password" placeholder="请输入密码">
+                    <input type="password" placeholder="请重复输入密码">
+                </p>
+                <p>密码为6-18位英文数字</p>
+                <span>性别&nbsp</span>
+                <input type="radio" value="man" name="sex" checked="checked" id="1">
+                <label for="1">男</label>
+                <input type="radio" value="girl" name="sex" id="2">
+                <label for="2">女</label>
+                <select name="城市" id="">
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                    <option>深圳</option>
+                    <option>杭州</option>
+                </select>
+                <p>&nbsp 爱好：&nbsp</p>
+                <input type="checkbox" value="sport" name="hoby" id="1">
+                <label for="1">运动</label>
+                <input type="checkbox" value="art" name="hoby" id="2">
+                <label for="2">艺术</label>
+                <input type="checkbox" value="science" name="hoby" id="3">
+                <label for="3">科学</label>
+                <p>&nbsp 个人描述:&nbsp</p>
+                <textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
+                <input type="submit" value="提交">
+                </div>
+            </form>
+        </div>
+        <br>版权所有&copy;
+    </div>
+</body>
+
+</html>
