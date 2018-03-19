@@ -12,3 +12,5 @@ JS sublimeCodeIntel
 AutoFileName 引入文件提示
 node.js ctrl+B  运行
 SideBarEnhancements 修改默认浏览器
+Markdown Editing  Markdown编辑和语法高亮支持 
+Markdown Preview 查看markdown效果

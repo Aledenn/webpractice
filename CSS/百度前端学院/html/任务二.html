@@ -120,14 +120,23 @@
     .footer {
         clear: both;
     }
-/*
+    /*
     .final p,h2{
         position: absolute;
         left: 40%;
 
     }*/
 
-    form 
+    form {
+        text-align: center;
+        line-height: 30px;
+    }
+    form label{
+        display: inline;
+        
+    }
+  
+
     </style>
 </head>
 
@@ -215,37 +224,38 @@
             <h2>侧栏注册窗口标题</h2>
             <form>
                 <div class="final">
-                <p>请输入邮箱地址：
-                    <input type="text" value="这是一个文本框">
-                </p>
-                <p>邮箱地址请按格式输入</p>
-                <p>请输入密码：
-                    <input type="password" placeholder="请输入密码">
-                    <input type="password" placeholder="请重复输入密码">
-                </p>
-                <p>密码为6-18位英文数字</p>
-                <span>性别&nbsp</span>
-                <input type="radio" value="man" name="sex" checked="checked" id="1">
-                <label for="1">男</label>
-                <input type="radio" value="girl" name="sex" id="2">
-                <label for="2">女</label>
-                <select name="城市" id="">
-                    <option>北京</option>
-                    <option>上海</option>
-                    <option>广州</option>
-                    <option>深圳</option>
-                    <option>杭州</option>
-                </select>
-                <p>&nbsp 爱好：&nbsp</p>
-                <input type="checkbox" value="sport" name="hoby" id="1">
-                <label for="1">运动</label>
-                <input type="checkbox" value="art" name="hoby" id="2">
-                <label for="2">艺术</label>
-                <input type="checkbox" value="science" name="hoby" id="3">
-                <label for="3">科学</label>
-                <p>&nbsp 个人描述:&nbsp</p>
-                <textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
-                <input type="submit" value="提交">
+                    <label for="email">请输入邮箱地址:</label>
+                        <input type="text" id="email" value="这是一个文本框">
+                    <br>
+                    <label>邮箱地址请按格式输入<br>
+                    请输入密码：</label>
+                        <input type="password" placeholder="请输入密码"><br>
+                        <input type="password" placeholder="请重复输入密码">
+                    <label>密码为6-18位英文数字</label><br>
+                    <label>性别&nbsp</label>
+                    <input type="radio" value="man" name="sex" checked="checked" id="1">
+                    <label for="1">男</label>
+                    <input type="radio" value="girl" name="sex" id="2">
+                    <label for="2">女</label><br>
+<!--                     <label for="city">城市</label>
+                    <select name="城市" id="city">
+                        <option>北京</option>
+                        <option>上海</option>
+                        <option>广州</option>
+                        <option>深圳</option>
+                        <option>杭州</option>
+                    </select><br> -->
+                    <label>&nbsp 爱好：&nbsp</label>
+                    <input type="checkbox" value="sport" name="hoby" id="1">
+                    <label for="1">运动</label>
+                    <input type="checkbox" value="art" name="hoby" id="2">
+                    <label for="2">艺术</label>
+                    <input type="checkbox" value="science" name="hoby" id="3">
+                    <label for="3">科学</label>
+                    <br>
+                    <label>&nbsp 个人描述:&nbsp</label>
+                    <textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
+                    <input type="submit" value="提交">
                 </div>
             </form>
         </div>
