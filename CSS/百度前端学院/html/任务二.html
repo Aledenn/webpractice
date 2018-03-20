@@ -126,7 +126,7 @@
         left: 40%;
 
     }*/
-
+    /*
     form {
         text-align: center;
         line-height: 30px;
@@ -134,9 +134,34 @@
     form label{
         display: inline;
         
-    }
-  
+    }*/
 
+    form {
+        line-height: 30px;
+
+    }
+
+    form .dis {
+        position: relative;
+        left: 20%;
+        height: 350px;
+        width: 170px;
+    }
+
+    form .dis label {
+        float: right;
+    }
+    
+    form .option{
+        position: relative;
+        left:40%;
+        height: 350px;
+        width: 170px;
+    }
+    form .option *{
+        float: left;
+
+    }
     </style>
 </head>
 
@@ -224,37 +249,53 @@
             <h2>侧栏注册窗口标题</h2>
             <form>
                 <div class="final">
-                    <label for="email">请输入邮箱地址:</label>
+                    <div class="dis">
+                        <label for="email">请输入邮箱地址</label>
+                        <br>
+                        <br>
+                        <label>请输入密码</label>
+                        <br>
+                        <label>密码为6-18位英文数字</label>
+                        <br>
+                        <label>性别</label>
+                        <br>
+                        <label for="city">城市</label>
+                        <br>
+                        <label>爱好</label>
+                        <br>
+                        <label>个人描述</label>
+                        <br>
+                    </div>
+                    <div class="option">
                         <input type="text" id="email" value="这是一个文本框">
-                    <br>
-                    <label>邮箱地址请按格式输入<br>
-                    请输入密码：</label>
-                        <input type="password" placeholder="请输入密码"><br>
+                        <br>
+                        <label>邮箱地址请按格式输入</label>
+                        <br>
+                        <input type="password" placeholder="请输入密码">
+                        <br>
                         <input type="password" placeholder="请重复输入密码">
-                    <label>密码为6-18位英文数字</label><br>
-                    <label>性别&nbsp</label>
-                    <input type="radio" value="man" name="sex" checked="checked" id="1">
-                    <label for="1">男</label>
-                    <input type="radio" value="girl" name="sex" id="2">
-                    <label for="2">女</label><br>
-<!--                     <label for="city">城市</label>
-                    <select name="城市" id="city">
-                        <option>北京</option>
-                        <option>上海</option>
-                        <option>广州</option>
-                        <option>深圳</option>
-                        <option>杭州</option>
-                    </select><br> -->
-                    <label>&nbsp 爱好：&nbsp</label>
-                    <input type="checkbox" value="sport" name="hoby" id="1">
-                    <label for="1">运动</label>
-                    <input type="checkbox" value="art" name="hoby" id="2">
-                    <label for="2">艺术</label>
-                    <input type="checkbox" value="science" name="hoby" id="3">
-                    <label for="3">科学</label>
-                    <br>
-                    <label>&nbsp 个人描述:&nbsp</label>
-                    <textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
+                        <input type="radio" value="man" name="sex" checked="checked" id="1">
+                        <label for="1">男</label>
+                        <input type="radio" value="girl" name="sex" id="2">
+                        <label for="2">女</label>
+                        <br>
+                        <select name="城市" id="city">
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>广州</option>
+                            <option>深圳</option>
+                            <option>杭州</option>
+                        </select>
+                        <br>
+                        <input type="checkbox" value="sport" name="hoby" id="1">
+                        <label for="1">运动</label>
+                        <input type="checkbox" value="art" name="hoby" id="2">
+                        <label for="2">艺术</label>
+                        <input type="checkbox" value="science" name="hoby" id="3">
+                        <label for="3">科学</label>
+                        <br>
+                        <textarea name="intruduce" id="" cols="30" rows="5" placeholder="请输入你的自我介绍"></textarea>
+                    </div>
                     <input type="submit" value="提交">
                 </div>
             </form>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			left:20px;
+			position: absolute;
+		}
+		p{
+			text-indent: 2em;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<h2>问题描述：github更改了文件，本地仓库也更改了文件，导致产生了分支</h2>
+	<p>解决方案：<br>
+		修改好要PUSH的文件<br>
+		再<code> git add README.md</code><br>
+		最后使用<code>git commit -m "解决冲突"</code>
+		再PUSH上github
+	</p>
+	</div>
+</body>
+</html>
