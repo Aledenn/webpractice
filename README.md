@@ -26,3 +26,4 @@ node.js ctrl+B  运行
 
 SideBarEnhancements 修改默认浏览器  
 
+JavaScript Completions 原生js代码提示
