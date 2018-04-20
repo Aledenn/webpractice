@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条件渲染</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	
+	<div id="app">
+		<!-- false的时候不会存在于dom上 -->
+		<div v-if="show==='a'" data-test="v-if">This is a</div>
+		<div v-else-if="show==='b'">This is b</div>
+		<div v-else>This is others</div>
+		<!-- show会把style="display: none;" -->
+		<div v-show="show" data-test="v-show">{{message}}</div>
+		<!-- key值可以让输入不复用 -->
+		<div v-if="chose">
+			用户名：<input key="username">
+		</div>
+		<div v-else>
+			邮箱：<input key="email">
+		</div>
+	</div>
+	<script >
+		var vm = new Vue({
+			el:"#app",
+			data:{
+				show:"a",
+				message:"hello world",
+				chose:true
+			}
+		})
+	</script>
+</body>
+</html>

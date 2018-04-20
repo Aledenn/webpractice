@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表渲染</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- template为占位，如果用div会留下在DIV中 -->
+        <template v-for="(item,index) in list" :key="item.id">
+            <div >
+                {{item.test}}---{{index}}
+            </div>
+            <span>{{item.test}}</span>
+        </template>
+    </div>
+    <script>
+    // push pop shift unshift splice sort reverse
+    // 直接用下标修改数组不会改变界面
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            list: [{
+                    id: "0010",
+                    test: "hello"
+                },
+                {
+                    id: "0011",
+                    test: "hell1"
+                },
+                {
+                    id: "0012",
+                    test: "hell2"
+                }
+            ]
+        }
+    })
+    </script>
+</body>
+
+</html>

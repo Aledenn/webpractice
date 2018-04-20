@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{fullName}}
+        <time>{{now}}</time>
+    </div>
+
+    <script>
+    	var vm = new Vue({
+    		el:"#app",
+    		data:{
+    			firstName:"CB",
+    			lastName:"Lee"
+    		},
+    		computed:{
+    			fullName:{
+    				get:function(){
+    					return this.firstName+" "+this.lastName
+    				},
+    				set:function(value) {
+    					var arr= value.split(" ");
+    					this.firstName=arr[0];
+    					this.lastName=arr[1];
+    					console.log(value);
+    			  	}
+    			},
+    			// 改变别的值不会重新渲染，因为Date.now()不是响应式的
+    			now:function(){
+    				return Date.now();
+    			}
+    			}
+    		})
+    </script>
+</body>
+
+</html>
