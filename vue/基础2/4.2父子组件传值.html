@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>父子组件传值</title>
+	<script src="../基础/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<!-- 加了冒号后面是js表达式，所以0,1是数字 -->
+		<counter :count="1" @increase="handleIcrease"></counter>
+		<counter :count="0" @increase="handleIcrease"></counter>
+		<div>{{total}}</div>
+	</div>
+</body>
+<script >
+	// 模板要用单引号括起来
+	// 不能直接修改父组件传递来的count值
+	var counter2={
+		props:['count'],
+		data:function(){
+			return {
+				number:this.count}
+		},
+		template:'<div @click="handleClick">{{number}}</div>',
+		methods:{
+			handleClick:function(){
+				this.number ++;
+				this.$emit('increase',1)
+			}
+		}
+	}
+	var vm = new Vue(
+	{
+		el: '#app',
+		data:{
+			total: 1
+		},
+		components:{
+			counter:counter2
+		},
+		methods:{
+			handleIcrease:function(step){
+				this.total+=step;
+			}
+		}
+	})
+</script>
+</html>

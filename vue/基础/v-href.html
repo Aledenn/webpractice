@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>v-href</title>
+    <script src='vue.js'></script>
+</head>
+
+<body>
+    <div id="app">
+        <a v-bind:href="url">我是人</a>
+    </div>
+    <script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            url: 'http://www.baidu.com'
+        }
+    })
+    </script>
+</body>
+
+</html>

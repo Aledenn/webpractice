@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件使用中的细节点</title>
+	<script src="基础/vue.js"></script>
+</head>
+<body>
+	<div id="root">
+		<!-- ref 获取dom节点 -->
+		<div id="app">
+			<counter ref="one" @change="handleChange"></counter>
+			<counter ref="two" @change="handleChange"></counter>
+			<div>{{total}}</div>
+<!-- 			<div ref="hello"
+			@click="handleClick"	
+			>
+				adfsadf.
+			</div> -->
+		</div>
+<!-- 		<table>
+			<tbody>
+				<tr is="row"></tr>
+				<tr is="row"></tr>
+				<tr is="row"></tr>
+			</tbody>
+		</table>
+		<ul>
+			<li is="row"></li>
+			<li is="row"></li>
+			<li is="row"></li>
+		</ul> -->
+	</div>
+
+	<script >
+		// 子组件data要定义为函数
+		// Vue.component('row',{
+		// 	data:function(){
+		// 		return {
+		// 			content: 'this is a content'
+		// 		}
+		// 	 },
+		// 	template: '<tr><td>{{content}}</td></tr>'
+		// })
+
+		// var vm = new Vue({
+		// 	el:'#root'
+		// })
+		// 获取子组件引用
+		Vue.component('counter',{
+			template:'<div @click="handleClick">{{number}}</div>',
+			data:function(){
+				return {
+					number: 0
+				}
+			},
+			methods:{
+				handleClick:function(){
+					this.number++;
+					this.$emit('change');
+				}
+			}
+		})
+		var vm2 = new Vue({
+			el:"#app",
+			data:{
+				total:0
+			},
+			methods:{
+				handleChange:function(){
+					this.total=this.$refs.one.number+this.$refs.two.number
+				}
+			}
+			// methods:{
+			// 	handleClick: function()
+			// 	{
+			// 		alert(this.$refs.hello.innerHTML)
+			// 	}
+			//}
+		})
+	</script>
+</body>
+</html>
