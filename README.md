@@ -30,6 +30,13 @@ SideBarEnhancements 修改默认浏览器
 
 JavaScript Completions 原生js代码提示
 
+view on brower快捷键:
+Firefox浏览器： Ctrl + Alt + f
+Chrome浏览器： Ctrl + Alt + c
+IE浏览器： Ctrl + Alt + i
+Safari浏览器： Ctrl + Alt + s
+
 常用快捷键：
 
 Ctrl+shift+D
+
